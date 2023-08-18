@@ -70,8 +70,8 @@ def compute_feature_importance(X_train, y_train, best_model, model_name):
 def showcase_user_categories(X_train_users, y_train, all_results):
     X_whole = pd.concat([X_train_users, y_train], axis=1)
     g = X_whole.groupby('user_id')
-    test_ranges = [('Extremely\nLow', 0.9, 1), ('Very Low', 0.8, 0.9), ('Low', 0.8, 0.5), ('Average', 0.5, 0.2),
-                   ('High', 0.2, 0)]
+    test_ranges = [('Extremely\nLow', 0.9, 1), ('Very Low', 0.8, 0.9), ('Low', 0.5, 0.8), ('Average', 0.2, 0.5),
+                   ('High', 0, 0.2)]
     f1_scores = []
     model_names = []
     groups = []
@@ -79,37 +79,32 @@ def showcase_user_categories(X_train_users, y_train, all_results):
         group_df = pd.concat([(data if (((data['final_score'] <= 2).sum() >= (item[1] * len(data))) & (
                 (data['final_score'] <= 2).sum() <= item[2] * len(data))) else pd.DataFrame()) for _, data in g])
         user_group = pd.unique(group_df['user_id'])
-        len(user_group)
 
         important_users = all_results.loc[all_results['user_id'].isin(user_group)]
 
-        for model in traditional_models:
-            for model_title in model_titles:
-                if model_title.startswith(model):
-                    print(model_title)
-                    f1_scores.append(f1_score(important_users['true'], important_users[model_title], average='weighted'))
-                    model_names.append(model_name)
-                    groups.append(item[0])
+        for model_title in list(model_preds.keys()):
+            if model_title != 'true':
+                model_names.append(model_title)
+                f1_scores.append(f1_score(important_users['true'], important_users[model_title], average='weighted'))
+                groups.append(item[0])
 
-            data = pd.DataFrame({"Weighted F1-Score": f1_scores,
-                                 'Percentage of Low Grades': groups,
-                                 'Model': model_names})
+    data = pd.DataFrame({"Weighted F1-Score": f1_scores,
+                         'Percentage of Low Grades': groups,
+                         'Model': model_names})
 
+    plot = sns.barplot(data=data, x="Percentage of Low Grades", y='Weighted F1-Score', hue='Model')
+    for item in plot.get_xticklabels():
+        item.set_fontweight('bold')
+    plt.xlabel('Student Performance Level', fontweight='bold')
+    plt.ylabel('Weighted F1-Score', fontweight='bold')
+    plt.ylim([0.5, 1])
 
-            plot = sns.barplot(data=data, x="Percentage of Low Grades", y='Weighted F1-Score', hue='Model')
-            for item in plot.get_xticklabels():
-                item.set_fontweight('bold')
-            plt.xlabel('Student Performance Level', fontweight='bold')
-            plt.ylabel('Weighted F1-Score', fontweight='bold')
-            plt.ylim([0.5, 1])
-
-            plt.legend(loc='lower right')
-
-            plt.show()
+    plt.legend(loc='lower right')
+    plt.tight_layout()
+    plt.show()
 
 
 def plot_confusion_matrix(y_test, y_pred, model_name):
-
     cm = confusion_matrix(y_test, y_pred)
     cm_array = np.array(cm)
 
@@ -127,6 +122,7 @@ def plot_confusion_matrix(y_test, y_pred, model_name):
 
     plt.show()
 
+
 model_preds = {}
 for dataset_version in ['base', 'node2vec', 'Deepwalk']:
     X_train, X_test, y_train, y_test = split_dataset(
@@ -140,6 +136,7 @@ for dataset_version in ['base', 'node2vec', 'Deepwalk']:
     plot_confusion_matrix(y_test, y_pred, model_title)
     compute_feature_importance(X_train, y_train, model, model_title)
 
+X_train, X_test, y_train, y_test = split_dataset(mooc_df)
 all_results = pd.DataFrame(model_preds)
 all_results = pd.concat([X_test[['user_id']], all_results], axis=1)
 showcase_user_categories(X_train[['user_id']], y_train, all_results)
