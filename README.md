@@ -1,6 +1,6 @@
 ## Graph Embedding for Grade Prediction in MOOCs
 
-### Author: Soheila Farokhi, Aswani Yaramala
+### Authors: Soheila Farokhi, Aswani Yaramala
 
 
 ### Datasets
