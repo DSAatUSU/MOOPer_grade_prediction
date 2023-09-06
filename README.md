@@ -15,7 +15,7 @@ dataset is saved under `data/` folder in a file named
 The dataset has the following format:
 - One line per student-challenge interaction/edge.
 - Each line includes: *user_id, challenge_id, timestamp, course_id, exercise_id, difficulty, retry_status, duration, final_score*.
-- First line is the network format.
+- The first line is the network format.
 - *final_score* is 0, 1, 2, 3 or 4.
 
 
@@ -35,7 +35,7 @@ You can install all the required packages using the following command:
 ```
 ### Creating the datasets
 
-To enhance dataset using graph structural information, run the code in file `create_graph_enhanced_dataset.py`. This code computes node properties like degree and centrality for each node in the graph as well as node embeddings using two popular node embedding algorithms, namely DeepWalk and node2vec algorithms. Finally two enhanced datasets are created and saved under `data/` folder.
+To enhance the dataset using graph structural information, run the code in the file `create_graph_enhanced_dataset.py`. This code computes node properties like degree and centrality for each node in the graph as well as node embeddings using two popular node embedding algorithms, namely DeepWalk and node2vec algorithms. Finally, two enhanced datasets are created and saved under `data/` folder.
 
 `mooc_with_deepwalk_embedding.csv` contains the dataset enhanced with graph basic properties as well as DeepWalk embeddings. 
 
@@ -55,4 +55,4 @@ Run the file named `train.py` to apply these 3 models on 3 different dataset set
 
 ### Additional Analysis
 
-Run the file named `additional_analysis.py` to plot the confusion matrices and feature importances for the Gradient Boosting method on different datasets. Also, to showcase the strength of algorithm in predicting grades for low-performing/struggling students, we compare Gradient Boosting's performance in predicting grade for different categories of students on different datasets.  
+Run the file named `additional_analysis.py` to plot the confusion matrices and feature importances for the Gradient Boosting method on different datasets. Also, to showcase the strength of the algorithm in predicting grades for low-performing/struggling students, we compare Gradient Boosting's performance in predicting grades for different categories of students on different datasets.  
