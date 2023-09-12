@@ -1,4 +1,4 @@
-## Graph Embedding for Grade Prediction in MOOCs
+## Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning
 
 ### Authors: Soheila Farokhi, Aswani Yaramala
 
