@@ -1,6 +1,9 @@
 ## Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning
 
-### Authors: Soheila Farokhi, Aswani Yaramala
+### Authors: Soheila Farokhi, Aswani Yaramala, Hamid Karimi
+
+
+![SentimentGPT](https://dsa.cs.usu.edu/Files/knowledge_graph.jpg)
 
 
 ### Datasets
