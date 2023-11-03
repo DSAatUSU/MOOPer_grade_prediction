@@ -6,7 +6,7 @@
 <p align="center">
   <img src="https://dsa.cs.usu.edu/Files/knowledge_graph.jpg" alt="MOOC using Graph Representation Learning"/>
   <br>
-  <em>Visualizing the traditional approach used in prior prediction models compared to our graph representation.</em>
+  <em>Visualizing the traditional approach used in prior prediction models compared to our graph representation</em>
 </p>
 
 
@@ -18,7 +18,7 @@ dataset is saved under `data/` folder in a file named
 <p align="center">
   <img src="https://dsa.cs.usu.edu/Files/MOOCdata_2.png" alt="MOOPer Dataset"/>
   <br>
-  <em>Entities and their relations in the MOOPer dataset.</em>
+  <em>Entities and their relations in the MOOPer dataset</em>
 </p>
 
 
@@ -65,6 +65,13 @@ To predict the grade, three traditional machine learning models are used:
 3. XGBoost
 
 Run the file named `train.py` to apply these 3 models on 3 different dataset settings: original dataset, original dataset + node2vec embeddings, original dataset + DeepWalk embeddings. This saves the models under `models/` folder.
+
+
+<p align="center">
+  <img src="https://dsa.cs.usu.edu/Files/MOOC Grade Prediction.png" alt="MOOC Grade Prediction"/>
+  <br>
+  <em>etailed classification results for different Gradient Boosting variations</em>
+</p>
 
 ### Additional Analysis
 
