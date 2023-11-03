@@ -10,6 +10,9 @@
 dataset is saved under `data/` folder in a file named
 `grade_prediction_mooc.csv`
 
+![SentimentGPT](https://dsa.cs.usu.edu/Files/MOOCdata_2.png)
+#### Entities and their relations in the MOOPer dataset.
+
 
 
 
