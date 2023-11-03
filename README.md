@@ -1,12 +1,12 @@
 ## Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning
 
-### Authors: Soheila Farokhi, Aswani Yaramala, Hamid Karimi
+### Authors: Soheila Farokhi, Aswani Yaramala, and Hamid Karimi
 
 
 ![SentimentGPT](https://dsa.cs.usu.edu/Files/knowledge_graph.jpg)
 
 
-### Datasets
+### Dataset
 dataset is saved under `data/` folder in a file named
 `grade_prediction_mooc.csv`
 
@@ -36,7 +36,7 @@ You can install all the required packages using the following command:
 ```
     $ pip install -r requirements.txt
 ```
-### Creating the datasets
+### Creating the Features
 
 To enhance the dataset using graph structural information, run the code in the file `create_graph_enhanced_dataset.py`. This code computes node properties like degree and centrality for each node in the graph as well as node embeddings using two popular node embedding algorithms, namely DeepWalk and node2vec algorithms. Finally, two enhanced datasets are created and saved under `data/` folder.
 
@@ -46,7 +46,7 @@ To enhance the dataset using graph structural information, run the code in the f
 
 The embeddings are also saved separately under the `data/` folder.
 
-### Grade prediction
+### Grade Prediction
 
 To predict the grade, three traditional machine learning models are used:
 
