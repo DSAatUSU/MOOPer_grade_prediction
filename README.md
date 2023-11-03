@@ -4,7 +4,7 @@
 
 
 ![SentimentGPT](https://dsa.cs.usu.edu/Files/knowledge_graph.jpg)
-visualizing the traditional approach used in prior prediction models compared to our graph representation.
+#### Visualizing the traditional approach used in prior prediction models compared to our graph representation.
 
 ### Dataset
 dataset is saved under `data/` folder in a file named
