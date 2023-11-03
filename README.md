@@ -3,8 +3,12 @@
 ### Authors: Soheila Farokhi, Aswani Yaramala, and Hamid Karimi
 
 
-![SentimentGPT](https://dsa.cs.usu.edu/Files/knowledge_graph.jpg)
-#### Visualizing the traditional approach used in prior prediction models compared to our graph representation.
+<p align="center">
+  <img src="https://dsa.cs.usu.edu/Files/knowledge_graph.jpg" alt="SentimentGPT"/>
+  <br>
+  <em>Visualizing the traditional approach used in prior prediction models compared to our graph representation.</em>
+</p>
+
 
 ### Dataset
 dataset is saved under `data/` folder in a file named
