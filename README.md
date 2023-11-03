@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img src="https://dsa.cs.usu.edu/Files/knowledge_graph.jpg" alt="SentimentGPT"/>
+  <img src="https://dsa.cs.usu.edu/Files/knowledge_graph.jpg" alt="MOOC using Graph Representation Learning"/>
   <br>
   <em>Visualizing the traditional approach used in prior prediction models compared to our graph representation.</em>
 </p>
@@ -14,9 +14,12 @@
 dataset is saved under `data/` folder in a file named
 `grade_prediction_mooc.csv`
 
-![SentimentGPT](https://dsa.cs.usu.edu/Files/MOOCdata_2.png)
-#### Entities and their relations in the MOOPer dataset.
 
+<p align="center">
+  <img src="https://dsa.cs.usu.edu/Files/MOOCdata_2.png" alt="MOOPer Dataset"/>
+  <br>
+  <em>Entities and their relations in the MOOPer dataset.</em>
+</p>
 
 
 
