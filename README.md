@@ -68,9 +68,15 @@ Run the file named `train.py` to apply these 3 models on 3 different dataset set
 
 
 <p align="center">
+    <em>Comparing the performance of 9 models on grade prediction task. The best algorithm in each column is displayed in bold</em>
+  <img src="https://dsa.cs.usu.edu/Files/MOOC Grade Prediction Models.png" alt="MOOC Grade Prediction Models"/>
+  <br>
+</p>
+
+<p align="center">
+    <em>Detailed classification results for different Gradient Boosting variations</em>
   <img src="https://dsa.cs.usu.edu/Files/MOOC Grade Prediction.png" alt="MOOC Grade Prediction"/>
   <br>
-  <em>Detailed classification results for different Gradient Boosting variations</em>
 </p>
 
 ### Additional Analysis
