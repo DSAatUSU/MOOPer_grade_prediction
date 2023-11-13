@@ -1,4 +1,4 @@
-## Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning
+## This reposity holds the code for the paper [Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning](https://ieeexplore.ieee.org/document/10302642) ([arXiv version](https://arxiv.org/abs/2310.12281))
 
 ### Authors: Soheila Farokhi, Aswani Yaramala, and Hamid Karimi
 
