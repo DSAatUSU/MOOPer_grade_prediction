@@ -82,3 +82,17 @@ Run the file named `train.py` to apply these 3 models on 3 different dataset set
 ### Additional Analysis
 
 Run the file named `additional_analysis.py` to plot the confusion matrices and feature importances for the Gradient Boosting method on different datasets. Also, to showcase the strength of the algorithm in predicting grades for low-performing/struggling students, we compare Gradient Boosting's performance in predicting grades for different categories of students on different datasets.  
+
+## Citation
+
+If you use the code or data, please cite the following paper:
+
+@INPROCEEDINGS{Farokhi2023Mooper,
+  author={Farokhi, Soheila and Yaramal, Aswani and Huang, Jiangtao and Khan, Muhammad Fawad Akbar and Qi, Xiaojun and Karimi, Hamid},
+  booktitle={2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA)}, 
+  title={Enhancing the Performance of Automated Grade Prediction in MOOC using Graph Representation Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/DSAA60987.2023.10302642}}
