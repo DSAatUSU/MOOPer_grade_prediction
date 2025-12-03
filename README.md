@@ -86,7 +86,7 @@ Run the file named `additional_analysis.py` to plot the confusion matrices and f
 ## Citation
 
 If you use the code or data, please cite the following paper:
-
+```
 @INPROCEEDINGS{Farokhi2023Mooper,
   author={Farokhi, Soheila and Yaramal, Aswani and Huang, Jiangtao and Khan, Muhammad Fawad Akbar and Qi, Xiaojun and Karimi, Hamid},
   booktitle={2023 IEEE 10th International Conference on Data Science and Advanced Analytics (DSAA)}, 
@@ -96,3 +96,4 @@ If you use the code or data, please cite the following paper:
   number={},
   pages={1-10},
   doi={10.1109/DSAA60987.2023.10302642}}
+```
